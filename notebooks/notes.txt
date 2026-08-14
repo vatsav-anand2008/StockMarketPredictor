@@ -1,0 +1,22 @@
+random forest outputs r^2: 0.15 and MAE: 2.955
+better than averaging(MAE: 3.201)
+
+adding RSI, avg gain, avg loss does not affect random forest results
+
+market relative(SPY) features increased r^2 to 0.37 and MAE decreased to 2.46
+
+doing time based split drops r^2 of all regressors to 0
+
+XGBoost results in r^2 of -0.2 on a 5 day prediction
+
+all models had around 0.2-0.25 accuracy score on 20d class
+
+random forest got 0.4 accuracy score on 5d class
+
+all algorithms had ~0.25 accuracy score on 20d relative class
+
+all models got 0.35-0.4 accuracy score on 5d relative class
+
+all models got around ~0.2 accuracy with qcut instead of classification
+
+spy close and spy 20d volatility consistently most weighted
